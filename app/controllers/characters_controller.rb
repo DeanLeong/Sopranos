@@ -1,4 +1,5 @@
 class CharactersController < ApplicationController
+  
   before_action :set_character, only: :show
   before_action :authorize_request, only: [:create, :update, :destroy]
   before_action :set_user_character, only: [:update, :destroy]

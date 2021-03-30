@@ -31,7 +31,7 @@ puts "#{Blog.count} blogs created"
 
 @character1 = Character.create!(
   name: 'Tony Soprano', 
-  biography: 'Tony is the boss of the North Jersey crime family.', 
+  biography: 'Tony etcetc', 
   quotes: 'Let me tell you something. I have a semester and a half of college, so I understand Freud. I understand therapy, as a concept.', 
   imgurl: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Tony_Soprano.jpg/270px-Tony_Soprano.jpg',
   user: @admin)
