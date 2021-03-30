@@ -46,7 +46,6 @@ class CharactersController < ApplicationController
   end
 
   def character_params
-    params.require(:motorcycle).permit(:name, :imgurl)
+    params.require(:character).permit(:name, :imgurl, :biography, :quotes)
   end
-
 end
