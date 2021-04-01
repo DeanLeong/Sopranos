@@ -14,7 +14,8 @@ Character.destroy_all
 @admin = User.create!(
   username: 'admin', 
   email: 'admin@email.com', 
-  password_digest: '123456')
+  password_digest: '123456',
+  imgurl: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NDg0MDU1MTg5ODE2ODQ3/dean-martin-9542166-1-402.jpg')
 
 puts "#{User.count} users created"
 
@@ -34,6 +35,7 @@ puts "#{Blog.count} blogs created"
   biography: 'Tony etcetc', 
   quotes: 'Let me tell you something. I have a semester and a half of college, so I understand Freud. I understand therapy, as a concept.', 
   imgurl: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Tony_Soprano.jpg/270px-Tony_Soprano.jpg',
-  user: @admin)
+  user: @admin
+)
 
 puts "#{Character.count} characters created"

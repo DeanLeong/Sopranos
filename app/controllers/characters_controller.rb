@@ -8,12 +8,12 @@ class CharactersController < ApplicationController
   def index
     @characters = Character.all
 
-    render json: @characters, include: :names, :biography, :quotes, :imgurl, status: :ok
+    render json: @characters #include: :names :biography :quotes :imgurl status: :ok
   end
   
   #Get /characters/1
   def show
-    render json: @character, include: :names, :biography, :quotes, :imgurl, status: :ok
+    render json: @character #include: :names :biography :quotes :imgurl status: :ok
   end
 
   def create
