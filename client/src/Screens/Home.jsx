@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
+
 function Home(props) {
 
-  console.log(props.characters)
+  console.log(props)
 
   return (
     <div className="home-container">
