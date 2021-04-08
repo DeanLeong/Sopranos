@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import './App.css';
 import { getAllCharacters } from "./services/characters"
+import { Link, Route } from 'react-router-dom'
+
+import CharacterPage from './screens/CharacterPage'
+import Home from './screens/Home'
 
 
 function App(props) {
@@ -19,7 +23,13 @@ function App(props) {
 
   return (
     <div className="App">
-        <h1>Hello</h1>
+      <Route exact path={`/home`}>
+        <Home characters={characters}/>
+      </Route>
+
+      <Route exact path={`/characters/:id`}>
+        <CharacterPage characters={characters}/>
+      </Route>
     </div>
   );
 }
