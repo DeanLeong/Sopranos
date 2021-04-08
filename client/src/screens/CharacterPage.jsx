@@ -41,3 +41,4 @@ export default CharacterPage;
 
 
 
+// probably just need to download the images and host them on gith, put in an asset folder
