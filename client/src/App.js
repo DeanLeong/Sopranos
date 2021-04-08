@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './App.css';
-import { getAllCharacters } from "./services/characters"
-import { Link, Route } from 'react-router-dom'
+import { getAllCharacters, getOneCharacter } from "./services/characters"
+import { Link, Route, useParams } from 'react-router-dom'
 
 import CharacterPage from './screens/CharacterPage'
 import Home from './screens/Home'
@@ -10,6 +10,7 @@ import Home from './screens/Home'
 function App(props) {
 
   const [characters, setCharacters] = useState([])
+  const { id } = useParams()
 
   useEffect(() => {
     const fetchCharacters = async () => {
@@ -18,6 +19,14 @@ function App(props) {
     }
     fetchCharacters()
   }, [])
+
+  useEffect(() => {
+    const fetchOneCharacter = async () => {
+      const characterData = await getOneCharacter(id)
+      setCharacters(characterData)
+    }
+    fetchOneCharacter()
+  }, [id])
 
   console.log(characters)
 
