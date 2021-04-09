@@ -20,13 +20,7 @@ function App(props) {
     fetchCharacters()
   }, [])
 
-  useEffect(() => {
-    const fetchOneCharacter = async () => {
-      const characterData = await getOneCharacter(id)
-      setCharacters(characterData)
-    }
-    fetchOneCharacter()
-  }, [id])
+  
 
   console.log(characters)
 

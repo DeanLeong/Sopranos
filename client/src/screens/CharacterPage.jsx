@@ -23,7 +23,7 @@ function CharacterPage({ characters }) {
         character?.name
           ?
           <div>
-            {/* <img>{character?.imgurl}</img> */}
+            <img src={character?.imgurl} />
             <div className="bio">
               {character?.biography}
             </div>
