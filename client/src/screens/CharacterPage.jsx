@@ -17,17 +17,19 @@ function CharacterPage({ characters }) {
   }, [id])
 
   return (
-    <div>
-      <h2>{character?.name}</h2>
+    <div className="character-page-container">
+      <h2 className="char-name-h2">{character?.name}</h2>
       {
         character?.name
           ?
-          <div>
+          <div className="char-container">
             <img src={character?.imgurl} />
             <div className="bio">
+              <p>Biography:</p>
               {character?.biography}
             </div>
-            <div>
+            <div className="quotes">
+              <p>Quotes:</p>
               {character?.quotes}
             </div>
           </div>

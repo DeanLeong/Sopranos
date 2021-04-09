@@ -56,10 +56,18 @@ puts "#{Blog.count} blogs created"
 )
 
 @character2 = Character.create!(
-  name: 'Christ Moltisanti',
+  name: 'Christopher Moltisanti',
   biography: 'Chris etcetc',
   quotes: 'You Ever Feel Like Nothin’ Good Was Ever Gonna Happen To You?',
   imgurl: 'https://upload.wikimedia.org/wikipedia/en/f/ff/Christopher_Moltisanti.jpg',
+  user: @user1
+)
+
+@character3 = Character.create!(
+  name: 'Silvio Dante',
+  biography: 'Silvio etc etc.',
+  quotes: 'Just When I Thought I Was Out, They Pulled Me Back In.',
+  imgurl: 'https://bamfstyle.com/wp-content/uploads/2019/11/sop603silv-main1.jpg',
   user: @user1
 )
 

@@ -26,7 +26,7 @@ function App(props) {
 
   return (
     <div className="App">
-      <Route exact path={`/home`}>
+      <Route exact path={`/`}>
         <Home characters={characters}/>
       </Route>
 

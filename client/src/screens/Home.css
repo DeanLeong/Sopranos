@@ -1,0 +1,21 @@
+.home-container {
+  background-color: #88aac2;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.site-h1 {
+  margin-top: 0;
+}
+
+.char-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.char-img {
+  height: 200px;
+  width: 175px;
+}
